@@ -6,12 +6,21 @@
 //  Copyright © 2016 Edric Dearment. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#include <stdio.h>
+#define Kmsmi .3048
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    return 0;
+int main (void)
+{
+
+    double ft, m;
+    
+    printf("Enter the distance in feet!\n");
+    scanf("%lf",&ft);
+    
+    m = Kmsmi * ft;
+    
+    printf("The amount traveled in meters is: %f \n", m);
+    
+    return(0);
+    
 }
